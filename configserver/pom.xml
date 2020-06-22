@@ -10,13 +10,14 @@
 	</parent>
 	<groupId>com.optimagrowth</groupId>
 	<artifactId>configserver</artifactId>
-	<version>chapter12</version>
+	<version>${docker.image.version}</version>
 	<name>Configuration Server</name>
 	<description>Configuration Server</description>
 
 	<properties>
 		<java.version>11</java.version>
 		<docker.image.prefix>ostock</docker.image.prefix>
+		<docker.image.version></docker.image.version>
 		<spring-cloud.version>Hoxton.SR1</spring-cloud.version>
 	</properties>
 
@@ -79,9 +80,6 @@
 						<goals>
 							<goal>build</goal>
 						</goals>
-						<configuration>
-							<tag>819322222443.dkr.ecr.us-east-2.amazonaws.com/ostock/configserver:latest</tag>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
