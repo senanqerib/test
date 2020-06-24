@@ -18,7 +18,7 @@ spec:
       - env:
         - name: ENCRYPT_KEY
           value: fje83Ki8403Iod87dne7Yjsl3THueh48jfuO9j4U2hf64Lo
-        image: 819322222443.dkr.ecr.us-east-2.amazonaws.com/ostock/configserver:chapter12
+        image: 819322222443.dkr.ecr.us-east-2.amazonaws.com/ostock/configserver:latest
         name: configserver
         ports:
         - containerPort: 8071
